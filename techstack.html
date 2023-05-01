@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/498749450c.js" crossorigin="anonymous"></script>
+    <title>TechStack</title>
+</head>
+
+<body>
+    <header class="bg-[var(--primarycolour)] ">
+        <nav class="flex justify-between items-center w-[92%] mx-auto">
+            <div>
+                <img class="w-16" src="DALL·E 2023-03-22 23.10.42 - boy programing on computer pixelated.png" alt="">
+            </div>
+            <div class="pr-80 flex ">
+                <img src ="moon.png" id="icon" class="bg-[#FBE7C6] rounded-xl">
+                <p class="pl-5   text-[var(--secondarycolour)] text-xl font-bold">Theme</p>
+            </div>
+            <div>
+                <ul class="flex items-center text-[#9A08F7] gap-[4vw]">
+                    <li>
+                        <i class="fa-solid fa-house"></i>
+                        <a class="hover:text-[#a78bfa]  text-[var(--secondarycolour)] text-xl font-bold" href="SELF.html">HOME</a>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-linkedin "></i>
+                        <a class="hover:text-[#a78bfa]  text-[var(--secondarycolour)] text-xl font-bold"
+                            href="https://www.linkedin.com/in/shlok-jagtap-5a8122228">Linked In</a>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-github "></i>
+                        <a class="hover:text-[#a78bfa]   text-[var(--secondarycolour)] text-xl font-bold"
+                            href="https://github.com/DeImOs-Sj">GITHUB</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-microchip "></i>
+                        <a class="hover:text-[#a78bfa]  text-[var(--secondarycolour)] text-xl font-bold"
+                            href="techstack.html">TechStack</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-address-card "></i>
+                        <a class="hover:text-[#a78bfa]  text-[var(--secondarycolour)] text-xl font-bold" href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+        </nav>
+    </header>
+    <style>
+
+        :root{
+            --primarycolour:#FFFFFF;
+            --secondarycolour:#000000;
+        }
+
+        .darktheme{
+            --primarycolour:#000000;
+            --secondarycolour:#FFFFFF;
+        }
+
+        #icon{
+            width: 25px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        var icon=document.getElementById("icon");
+        icon.onclick=function(){
+            document.body.classList.toggle("darktheme");
+
+            if(document.body.classList.contains("darktheme")){
+                icon.src= "sun.png";
+            }else{
+                icon.src= "moon.png";
+            }
+        }
+        
+    </script>
+
+    <div>
+        <p class="pt-10   text-[#28272C] font-bold text-3xl  text-center">WEB DEV TECHSTACK</p>
+        <hr>
+        <div class="flex flex-wrap">
+            <img class="w-1/2 sm:w-1/3 lg:w-1/6" src="image-1.jpg" alt="Image 1">
+            <img class="w-1/2 sm:w-1/3 lg:w-1/6" src="image-2.jpg" alt="Image 2">
+            <img class="w-1/2 sm:w-1/3 lg:w-1/6" src="image-3.jpg" alt="Image 3">
+            <img class="w-1/2 sm:w-1/3 lg:w-1/6" src="image-4.jpg" alt="Image 4">
+            <img class="w-1/2 sm:w-1/3 lg:w-1/6" src="image-5.jpg" alt="Image 5">
+            <img class="w-1/2 sm:w-1/3 lg:w-1/6" src="image-6.jpg" alt="Image 6">
+          </div>
+          
+    </div>
+    <div>
+        <div>
+            <p class="pt-10   text-[#28272C] font-bold text-3xl  text-center">LANGUAGES</p>
+            <hr>
+            <div class="flex flex-wrap">
+                <img class="w-2/5 sm:w-1/3 lg:w-1/6" src="C (2).png" >
+                <img class="w-2/5 sm:w-1/3 lg:w-1/6" src="C++.png" >
+                <img class="w-2/5 sm:w-1/3 lg:w-1/6" src="python (2).png" >
+                <img class="w-2/5 sm:w-1/3 lg:w-1/6" src="java.png" >
+                <img class="w-2/5 sm:w-1/3 lg:w-1/6" src="javascript.png" >
+                <img class="w-2/5 sm:w-1/3 lg:w-1/6" src="image-6.jpg" >
+              </div>
+              
+        </div>
+    <div id="particles-js"
+    class="  fixed top-0 left-0 w-full h-full z-[-1] bg-[var(--primarycolour)]">
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</div>
+</body>
+
+</html>
+

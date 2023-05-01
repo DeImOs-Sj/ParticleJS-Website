@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/498749450c.js" crossorigin="anonymous"></script>
+    <title>Contact</title>
+</head>
+
+<body>
+    <header class="bg-[var(--primarycolour)] ">
+        <nav class="flex justify-between items-center w-[92%] mx-auto">
+            <div>
+                <img class="w-16" src="DALL·E 2023-03-22 23.10.42 - boy programing on computer pixelated.png" alt="">
+            </div>
+            <div class="pr-80 flex ">
+                <img src ="moon.png" id="icon" class="bg-[#FBE7C6] rounded-xl">
+                <p class="pl-5   text-[var(--secondarycolour)] text-xl font-bold">Theme</p>
+            </div>
+            <div>
+                <ul class="flex items-center text-[#9A08F7] gap-[4vw]">
+                    <li>
+                        <i class="fa-solid fa-house"></i>
+                        <a class="hover:text-[#a78bfa]  text-[var(--secondarycolour)] text-xl font-bold" href="SELF.html">HOME</a>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-linkedin "></i>
+                        <a class="hover:text-[#a78bfa]  text-[var(--secondarycolour)] text-xl font-bold"
+                            href="https://www.linkedin.com/in/shlok-jagtap-5a8122228">Linked In</a>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-github "></i>
+                        <a class="hover:text-[#a78bfa]   text-[var(--secondarycolour)] text-xl font-bold"
+                            href="https://github.com/DeImOs-Sj">GITHUB</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-microchip "></i>
+                        <a class="hover:text-[#a78bfa]  text-[var(--secondarycolour)] text-xl font-bold"
+                            href="techstack.html">TechStack</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-address-card "></i>
+                        <a class="hover:text-[#a78bfa]  text-[var(--secondarycolour)] text-xl font-bold" href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+        </nav>
+    </header>
+    
+        <div class="flex align-center justify-center pt-8">
+           <form  class="flex  flex-col bg-[#46392ac9] p-10 pt-10 pb-10 w-96">
+            <h3 class="font-semibold fons-sans text-center text-4xl pb-11 text-[#F6F6E8] hover:text-[#7A42BD]">Contact Me</h3>
+            <p class="font-semibold font-serif text-2xl pb-8 pt-8 text-[var(--secondarycolour)]">NAME</p>
+            <input type="text" id="NAME" placeholder="" required  class="bg-transparent border-b-2 border-[#D6AD60] focus:outline-0 p-2 text-[#FFFFFF]">
+            <p class="font-semibold font-serif text-2xl pb-8 pt-8 text-[var(--secondarycolour)]">EMAIL</p>
+            <input type="email" id="email"  placeholder="" required class="bg-transparent border-b-2 border-[#D6AD60] focus:outline-0 p-2 text-[#FFFFFF] ">
+            <p class="font-semibold font-serif text-2xl pb-8 pt-8 text-[var(--secondarycolour)]">PHONE</p>  
+            <input type="text" id="phone"  placeholder="" required class="bg-transparent border-b-2 border-[#D6AD60] focus:outline-0 p-2 text-[#FFFFFF]">
+            <div class="pt-14 text-center">
+            <button class="text-xl font-bold text-[#F6F6E8] rounded-xl w-24 bg-[#7EC8E3] hover:bg-[#d5db1e]">Submit</button>
+        </div>
+           </form>
+        </div>
+    <div id="particles-js"
+        class="  fixed top-0 left-0 w-full h-full z-[-1] bg-[var(--primarycolour)]">
+        <script src="particles.js"></script>
+        <script src="app.js"></script>
+    </div>
+    <style>
+    :root{
+        --primarycolour:#FFFFFF;
+        --secondarycolour:#000000;
+    }
+
+    .darktheme{
+        --primarycolour:#000000;
+        --secondarycolour:#FFFFFF;
+    }
+
+    #icon{
+        width: 25px;
+        cursor: pointer;
+    }
+</style>
+<script>
+    var icon=document.getElementById("icon");
+    icon.onclick=function(){
+        document.body.classList.toggle("darktheme");
+
+        if(document.body.classList.contains("darktheme")){
+            icon.src= "sun.png";
+        }else{
+            icon.src= "moon.png";
+        }
+    }
+    
+</script>
+</body>
+
+</html>
